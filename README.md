@@ -26,7 +26,7 @@ LocalizationManager.addCustomStrings(CUSTOM_STRINGS)
 // Get the values with the active language (by default 'BASE')
 LocalizationManager.getLocalizedStrings("SKILL_NAME")
 
-// Get the values with a specific langauge
+// Get the values with a specific language
 LocalizationManager.getLocalizedStrings("SKILL_NAME", "ES")
 ```
 
