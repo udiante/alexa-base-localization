@@ -1,5 +1,5 @@
 # Alexa Base Localization NPM
-
+Private NPM for a centralized Alexa Skill Localization strings.
 
 # Instructions
 Import the Package.

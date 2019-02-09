@@ -2,7 +2,11 @@ module.exports.performAsyncTest = async function(testName, testFunction, skip) {
     if (skip) {
         return
     }
-    console.log('Starting Test: ' + testName);
-    await testFunction();
+    try {
+        console.log('Starting Test: ' + testName);
+        await testFunction();
+    } catch (error) {
+        console.error('Test failed: ' + testName, error)
+    }
     console.log('Performed Test: ' + testName);
 }

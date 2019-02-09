@@ -1,6 +1,8 @@
 // Write all the Strings
 const strings = {
-    SKILL_NAME: '{SKILL_NAME}',
+    SKILL_NAME: [
+        '{SKILL_NAME}'
+    ],
     WELCOME: [
         'Hola, ¡Bienvenido a {SKILL_NAME}. ¿Listo para obtener información sobre los objetos que orbitan la tierra?',
         'Hola, ¡Bienvenido a {SKILL_NAME}. Espero tu pregunta.',
@@ -8,7 +10,9 @@ const strings = {
         'Bienvenido a {SKILL_NAME}, ¿En qué te puedo ayudar hoy?',
         '¡Hola!, gracias por utilizar {SKILL_NAME} ¿En que te puedo ayudar?'
     ],
-    WELCOME_REPROMPT: 'Para obtener más información di Ayuda.',
+    WELCOME_REPROMPT: [
+        'Para obtener más información di Ayuda.'
+    ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
         '¿Necesitas más información?',
         '¿Puedo ayudarte en algo más?'
