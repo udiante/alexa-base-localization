@@ -53,6 +53,10 @@ LocalizationManager.setActiveLanguage = function(languageKey) {
     activeLanguage = languageKey
 }
 
+LocalizationManager.getActiveLanguage = function() {
+    return activeLanguage
+}
+
 /**
  * Returns a string (or Array of strings) given the key
  * @param {String} stringKey Localized key
