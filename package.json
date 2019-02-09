@@ -1,0 +1,20 @@
+{
+  "name": "alexa-base-localization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udiante/alexa-base-localization.git"
+  },
+  "author": "Alejandro Quibus",
+  "private": true,
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/udiante/alexa-base-localization/issues"
+  },
+  "homepage": "https://github.com/udiante/alexa-base-localization#readme"
+}
