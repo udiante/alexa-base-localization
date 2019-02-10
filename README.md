@@ -22,7 +22,7 @@ const CUSTOM_STRINGS = {
             "Welcome"
         ]
     },
-    ES : {
+    es_ES : {
         "SKILL_NAME" : [
             "MI SKILL DE PRUEBAS"
         ],
@@ -38,7 +38,7 @@ const CUSTOM_STRINGS = {
 LocalizationManager.addCustomStrings(CUSTOM_STRINGS)
 
 // Configure the default language
-LocalizationManager.setActiveLanguage("ES")
+LocalizationManager.setActiveLanguage("es_ES")
 ```
 
 - Usage example 'LocalizationManager':
@@ -48,7 +48,7 @@ LocalizationManager.setActiveLanguage("ES")
 LocalizationManager.getLocalizedStrings("SKILL_NAME")
 
 // Get the values with a specific language
-LocalizationManager.getLocalizedStrings("SKILL_NAME", "ES") //returns: ["MI SKILL DE PRUEBAS"]
+LocalizationManager.getLocalizedStrings("SKILL_NAME", "es_ES") //returns: ["MI SKILL DE PRUEBAS"]
 LocalizationManager.getLocalizedStrings("SKILL_NAME", "EN") //returns: ["MY TEST SKILL"]
 ```
 
