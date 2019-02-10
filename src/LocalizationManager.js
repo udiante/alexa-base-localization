@@ -6,7 +6,7 @@
 
 
 // Base Strings 
-const DEFAULT_STRING = {
+var DEFAULT_STRING = {
     BASE: {},
     es_ES: {}
 }
