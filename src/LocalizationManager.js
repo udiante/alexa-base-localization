@@ -7,17 +7,20 @@
 
 // Base Strings 
 const DEFAULT_STRING = {
-    BASE: require('../Localized/Base').STRINGS
+    BASE: {},
+    es_ES: {}
 }
 
 // Custom Strings
 
 var CUSTOM_STRINGS = {
-    BASE: {}
+    BASE: {},
+    es_ES: {}
 }
 
 var availableLangauages = {
-    BASE: "BASE"
+    BASE: "BASE",
+    es_ES: "es_ES"
 }
 
 var activeLanguage = availableLangauages.BASE
@@ -31,7 +34,7 @@ function LocalizationManager(){
 
 /**
  * Sets the default strings (optional, by default the LocationManager loads the base strings from this Package)
- * @param {String} baseStrings Object with the keys language keys. Each key has to contain 
+ * @param {DEFAULT_STRING} baseStrings Object with the keys language keys. Each key has to contain 
  */
 LocalizationManager.addDefaultStrings = function(baseStrings) {
     DEFAULT_STRING = baseStrings
@@ -39,7 +42,7 @@ LocalizationManager.addDefaultStrings = function(baseStrings) {
 
 /**
  * Sets the custom strings (when requesting a key the Manager will try to obtain the values from the custom strings prior to the base strings)
- * @param {String} customStrings Object with using the keys of the language to use and the values for each translation
+ * @param {CUSTOM_STRINGS} customStrings Object with using the keys of the language to use and the values for each translation
  */
 LocalizationManager.addCustomStrings = function(customStrings) {
     CUSTOM_STRINGS = customStrings
