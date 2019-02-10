@@ -18,12 +18,12 @@ var CUSTOM_STRINGS = {
     es_ES: {}
 }
 
-var availableLangauages = {
+var availableLanguages = {
     BASE: "BASE",
     es_ES: "es_ES"
 }
 
-var activeLanguage = availableLangauages.BASE
+var activeLanguage = availableLanguages.BASE
 
 
 // Init
@@ -75,7 +75,7 @@ LocalizationManager.getLocalizedStrings = function(stringKey, languageKey) {
  * Supported language keys, the imported language 
  */
 LocalizationManager.availableLanguage = function(){
-    return availableLangauages 
+    return availableLanguages 
 }
 
 module.exports = LocalizationManager
@@ -83,15 +83,15 @@ module.exports = LocalizationManager
 // Private methods
 
 function isValidLanguageKey(key) {
-    return key != undefined && availableLangauages[key] != undefined
+    return key != undefined && availableLanguages[key] != undefined
 }
 
 function getValuesIfAvailable(languageKey, stringKey) {
     // Try to obtain the values for the languageKey provided
     var values = getValues(CUSTOM_STRINGS, languageKey, stringKey) || getValues(DEFAULT_STRING, languageKey, stringKey)
-    if (values == undefined && languageKey != availableLangauages.BASE) {
+    if (values == undefined && languageKey != availableLanguages.BASE) {
         // Try to obtain the BASE language (maybe the key is not translated)
-        values = getValues(CUSTOM_STRINGS, availableLangauages.BASE, stringKey) || getValues(DEFAULT_STRING, availableLangauages.BASE, stringKey)
+        values = getValues(CUSTOM_STRINGS, availableLanguages.BASE, stringKey) || getValues(DEFAULT_STRING, availableLanguages.BASE, stringKey)
     }
     return values
 }
