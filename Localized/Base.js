@@ -4,7 +4,6 @@ const strings = {
         '{SKILL_NAME}'
     ],
     WELCOME: [
-        'Hola, ¡Bienvenido a {SKILL_NAME}. ¿Listo para obtener información sobre los objetos que orbitan la tierra?',
         'Hola, ¡Bienvenido a {SKILL_NAME}. Espero tu pregunta.',
         'Bienvenido a {SKILL_NAME}, ¿Qué necesitas?',
         'Bienvenido a {SKILL_NAME}, ¿En qué te puedo ayudar hoy?',
@@ -42,7 +41,10 @@ const strings = {
     ERROR_MESSAGE: [
         'Error al procesar la respuesta. No he podido entender tu pregunta.',
         'Se ha producido un error no controlado, prueba más tarde'
-    ]
+    ],
+    GENERIC_ERROR: [
+        'Lo siento, <break time="400ms"/> ha ocurrido un error y no he podido obtener la información.'
+    ],
 }
 
 /** 
