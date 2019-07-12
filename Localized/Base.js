@@ -24,7 +24,7 @@ const strings = {
         'Recuerda que la información proporcionada es orientativa y no se garantiza la exactitud de los datos'
     ],
     CONTINUE: [
-        '¿Algo más?',
+        'Necesitas algo más?',
         '¿Puedo ayudarte en algo más'
     ],
     EXIT: [
@@ -44,6 +44,21 @@ const strings = {
     ],
     GENERIC_ERROR: [
         'Lo siento, <break time="400ms"/> ha ocurrido un error y no he podido obtener la información.'
+    ],
+    APL_WELCOME: [
+        '¡Bienvenido! Espero tu pregunta'
+    ],
+    APL_WELCOME_HINTS: [
+        'ayuda'
+    ],
+    APL_HELP: [
+        'Espero tu pregunta'
+    ],
+    APL_HINTS: [ // Listado de intents sugeridos en las vistas (Ask Alexa, XXXXXX)
+        'ayuda'
+    ],
+    APL_ERROR: [
+        'Se ha producido un error'
     ],
 }
 
