@@ -3,7 +3,8 @@ const BASE_FILE = require('./Localized/Base')
 
 const DEFAULT_PACKAGE_LOCALIZED_STRINGS = {
     BASE: BASE_FILE.STRINGS,
-    es_ES: BASE_FILE.STRINGS
+    es_ES: BASE_FILE.STRINGS,
+    en_US: require('./Localized/en_US').STRINGS
 }
 
 // Source code
@@ -16,7 +17,4 @@ LocalizationManager.addDefaultStrings(DEFAULT_PACKAGE_LOCALIZED_STRINGS)
 
 module.exports.LocalizationManager = LocalizationManager
 
-module.exports.DEFAULT_STRINGS = {
-    BASE: BASE_FILE.STRINGS,
-    es_ES: BASE_FILE.STRINGS
-}
+module.exports.DEFAULT_STRINGS = DEFAULT_PACKAGE_LOCALIZED_STRINGS

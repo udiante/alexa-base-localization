@@ -8,19 +8,22 @@
 // Base Strings 
 var DEFAULT_STRING = {
     BASE: {},
-    es_ES: {}
+    es_ES: {},
+    "en-US": {}
 }
 
 // Custom Strings
 
 var CUSTOM_STRINGS = {
     BASE: {},
-    es_ES: {}
+    es_ES: {},
+    "en-US": {}
 }
 
 var availableLanguages = {
     BASE: "BASE",
-    es_ES: "es_ES"
+    es_ES: "es_ES",
+    en_EN: "en-US"
 }
 
 var activeLanguage = availableLanguages.BASE

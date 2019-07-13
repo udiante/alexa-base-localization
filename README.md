@@ -58,3 +58,43 @@ LocalizationManager.getLocalizedStrings("SKILL_NAME", "EN") //returns: ["MY TEST
 ```javascript
 "alexa-base-localization": "git://github.com:udiante/alexa-base-localization#semver:^1.0"
 ```
+
+# Alexa locale code information
+
+[Develop Skills in Multiple Languages ](https://developer.amazon.com/es/docs/custom-skills/develop-skills-in-multiple-languages.html)
+
+
+## Access to the locale code
+
+You can determine the language used to invoke the skill by checking the locale property included in all requests sent to your service (for example, `LaunchRequest` or `IntentRequest`. See Request Format for more about the different types of requests your skill can receive). Note that list events and skill events that are sent to your service do not include the locale property.
+
+The `locale` property is part of the request object:
+
+```javascript
+{
+  "request": {
+    "type": "LaunchRequest",
+    "requestId": "EdwRequestId.00000000-0000-0000-0000-000000000000",
+    "timestamp": "2016-06-14T20:59:24Z",
+    "locale": "en-US"
+  }
+}
+```
+
+## Alexa Locale codes
+| Locale Code | Language
+|---|--- |
+|de-DE | German (DE)
+|en-AU |English (AU)
+|en-CA | English (CA)
+| en-GB | English (UK)
+| en-IN | English (IN)
+| en-US | English (US)
+| es-ES | Spanish (ES)
+| es-MX | Spanish (MX)
+| es-US | Spanish (US)
+| fr-CA | French (CA)
+| fr-FR | French (FR)
+| it-IT | Italian (IT)
+| ja-JP | Japanese (JP)
+| pt-BR | Portuguese (BR)
