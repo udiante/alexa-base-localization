@@ -59,6 +59,11 @@ LocalizationManager.getLocalizedStrings("SKILL_NAME", "EN") //returns: ["MY TEST
 "alexa-base-localization": "git://github.com:udiante/alexa-base-localization#semver:^1.0"
 ```
 
+- Local development
+```javascript
+"alexa-base-localization": "file:./../alexa-base-localization"
+```
+
 # Alexa locale code information
 
 [Develop Skills in Multiple Languages ](https://developer.amazon.com/es/docs/custom-skills/develop-skills-in-multiple-languages.html)

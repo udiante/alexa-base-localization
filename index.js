@@ -13,7 +13,7 @@ LocalizationManager.addDefaultStrings(DEFAULT_PACKAGE_LOCALIZED_STRINGS)
 
 // Add the base files
 
-// Public
+// Public methods
 
 module.exports.LocalizationManager = LocalizationManager
 
