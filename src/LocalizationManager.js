@@ -70,7 +70,7 @@ LocalizationManager.getActiveLanguage = function() {
  * @returns {Strings} Array of strings if the key exists in the active o base language
  */
 LocalizationManager.getLocalizedStrings = function(stringKey, languageKey) {
-    languageKey = getValidLanguageKey(languageKey)
+    languageKey = getValidLanguageKey(languageKey) || activeLanguage
     return values = getValuesIfAvailable(languageKey, stringKey)
 }
 
@@ -88,8 +88,11 @@ LocalizationManager.availableLanguages = function(){
  * @returns {String} The related locale identifier for the Alexa locale
  */
 function getLocaleFromAlexaLocale(alexaSDKLocale) {
+    if (!alexaSDKLocale) {
+        return activeLanguage
+    }
     try {
-        const baseLocale = alexaSDKLocale.split('-')
+        const baseLocale = alexaSDKLocale.split('-')[0]
         switch (baseLocale) {
             case 'es':
                 return availableLanguages.es_ES
@@ -99,7 +102,7 @@ function getLocaleFromAlexaLocale(alexaSDKLocale) {
                 return availableLanguages.BASE
         }
     } catch (error) {
-        return availableLanguages.BASE
+        return activeLanguage
     }
 }
 
