@@ -4,63 +4,56 @@ const strings = {
         '{SKILL_NAME}'
     ],
     WELCOME: [
-        'Hello, Welcome to {SKILL_NAME}.',
-        //'Bienvenido a {SKILL_NAME}, ¿Qué necesitas?',
-        //'Bienvenido a {SKILL_NAME}, ¿En qué te puedo ayudar hoy?',
-        //'¡Hola!, gracias por utilizar {SKILL_NAME} ¿En que te puedo ayudar?'
+        'Hello, Welcome to {SKILL_NAME}.'
     ],
     HELP: [
         'LA AYUDA DEBE SER ESPECIFICA PARA CADA SKILL Y NO DEBE OBTENERSE DEL BASE'
     ],
     WELCOME_REPROMPT: [
-        //'Para obtener más información di Ayuda.',
-        //'Di "Ayuda" si necesitas más información'
+        'For more information tell "Help"',
+        'Say "Help" if you need more information',
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
-        //'¿Necesitas más información?',
-        //'¿Puedo ayudarte en algo más?'
+        'Do you need more info?',
+        'Can I help you in any way?'
     ],
     LEGAL: [
-        //'Recuerda que la información proporcionada es orientativa y no se garantiza la exactitud de los datos'
+        'Remember that the information provided is approximate and data accuracy is not guaranteed'
     ],
     CONTINUE: [
-        //'Necesitas algo más?',
-        //'¿Puedo ayudarte en algo más'
+        'Do you need more info?',
+        'Can I help you in any way?'
     ],
     EXIT: [
         'Goodbye have a good day!',
-        //'¡Adiós!, ¡Pasa un buen día!',
-        //'¡Nos vemos!, espero haber sido de ayuda',
-        //'¡Adiós!, estoy aquí para lo que necesites',
-        //'¡Nos vemos!, ¡No dudes en preguntarme cualquier otra cosa!'
+        'Goodbye',
+        'See you! I hope I have been helpful'
     ],
     UNHANDLED: [
-        "I'm not sure what do you said.",
-        //'No estoy muy segura de lo que has dicho.',
-        //'Creo que no te he entendido',
-        //'Lo siento, prueba otra vez. Si el error persiste prueba a formular el comando de otra forma aún sigo aprendiendo.'
+        "I'm not sure what you said.",
+        "I'm sorry, try again. If the error persists try to formulate the command in another way. I am still learning."
     ],
     ERROR_MESSAGE: [
-        'Error al procesar la respuesta. No he podido entender tu pregunta.',
-        'Se ha producido un error no controlado, prueba más tarde'
+        'Error processing the response. I have not been able to understand your question.',
+        'An uncontrolled error has occurred.'
     ],
     GENERIC_ERROR: [
-        'Lo siento, <break time="400ms"/> ha ocurrido un error y no he podido obtener la información.'
+        'Sorry, <break time="400ms"/> an error has occurred and I could not get the information.'
     ],
     APL_WELCOME: [
-        '¡Bienvenido! Espero tu pregunta'
+        'Hello!'
     ],
     APL_WELCOME_HINTS: [
-        'ayuda'
+        'help'
     ],
     APL_HELP: [
-        'Espero tu pregunta'
+        "I'm waitting for your command"
     ],
     APL_HINTS: [ // Listado de intents sugeridos en las vistas (Ask Alexa, XXXXXX)
-        'ayuda'
+        'help'
     ],
     APL_ERROR: [
-        'Se ha producido un error'
+        'An error happened'
     ],
 }
 
