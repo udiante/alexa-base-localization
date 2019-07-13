@@ -9,7 +9,7 @@
 var DEFAULT_STRING = {
     BASE: {},
     es_ES: {},
-    "en-US": {}
+    en_US: {}
 }
 
 // Custom Strings
