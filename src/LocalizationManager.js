@@ -8,19 +8,22 @@
 // Base Strings 
 var DEFAULT_STRING = {
     BASE: {},
-    es_ES: {}
+    es_ES: {},
+    en_US: {}
 }
 
 // Custom Strings
 
 var CUSTOM_STRINGS = {
     BASE: {},
-    es_ES: {}
+    es_ES: {},
+    en_US: {}
 }
 
 var availableLanguages = {
     BASE: "BASE",
-    es_ES: "es_ES"
+    es_ES: "es_ES",
+    en_US: "en_US"
 }
 
 var activeLanguage = availableLanguages.BASE
@@ -53,7 +56,7 @@ LocalizationManager.addCustomStrings = function(customStrings) {
  * @param {String} languageKey Object with using the keys of the language to use and the values for each translation
  */
 LocalizationManager.setActiveLanguage = function(languageKey) {
-    activeLanguage = languageKey
+    activeLanguage = getValidLanguageKey(languageKey)
 }
 
 LocalizationManager.getActiveLanguage = function() {
@@ -67,20 +70,54 @@ LocalizationManager.getActiveLanguage = function() {
  * @returns {Strings} Array of strings if the key exists in the active o base language
  */
 LocalizationManager.getLocalizedStrings = function(stringKey, languageKey) {
-    languageKey = languageKey || activeLanguage
+    languageKey = getValidLanguageKey(languageKey) || activeLanguage
     return values = getValuesIfAvailable(languageKey, stringKey)
 }
 
 /**
  * Supported language keys, the imported language 
  */
-LocalizationManager.availableLanguage = function(){
+LocalizationManager.availableLanguages = function(){
     return availableLanguages 
 }
+
+
+/**
+ * 
+ * @param {String} alexaSDKLocale 
+ * @returns {String} The related locale identifier for the Alexa locale
+ */
+function getLocaleFromAlexaLocale(alexaSDKLocale) {
+    if (!alexaSDKLocale) {
+        return activeLanguage
+    }
+    try {
+        const baseLocale = alexaSDKLocale.split('-')[0]
+        switch (baseLocale) {
+            case 'es':
+                return availableLanguages.es_ES
+            case 'en':
+                return availableLanguages.en_US
+            default:
+                return availableLanguages.BASE
+        }
+    } catch (error) {
+        return activeLanguage
+    }
+}
+
+LocalizationManager.getLocaleFromAlexaLocale = getLocaleFromAlexaLocale
 
 module.exports = LocalizationManager
 
 // Private methods
+
+function getValidLanguageKey(candidateKey) {
+    if (isValidLanguageKey(candidateKey)) {
+        return candidateKey
+    }
+    return getLocaleFromAlexaLocale(candidateKey)
+}
 
 function isValidLanguageKey(key) {
     return key != undefined && availableLanguages[key] != undefined
