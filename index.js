@@ -1,9 +1,8 @@
 // Localization files
-const BASE_FILE = require('./Localized/Base')
 
 const DEFAULT_PACKAGE_LOCALIZED_STRINGS = {
-    BASE: BASE_FILE.STRINGS,
-    es_ES: BASE_FILE.STRINGS,
+    BASE: require('./Localized/Base').STRINGS,
+    es_ES: require('./Localized/es_ES').STRINGS,
     en_US: require('./Localized/en_US').STRINGS
 }
 
