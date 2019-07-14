@@ -14,14 +14,12 @@ const strings = {
         'Say "Help" if you need more information',
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
-        'Do you need more info?',
         'Can I help you in any way?'
     ],
     LEGAL: [
         'Remember that the information provided is approximate and data accuracy is not guaranteed'
     ],
     CONTINUE: [
-        'Do you need more info?',
         'Can I help you in any way?'
     ],
     EXIT: [

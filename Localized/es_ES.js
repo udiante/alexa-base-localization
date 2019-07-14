@@ -17,15 +17,13 @@ const strings = {
         'Di "Ayuda" si necesitas más información'
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
-        '¿Necesitas más información?',
-        '¿Puedo ayudarte en algo más?'
+        '¿En que te puedo ayudar?'
     ],
     LEGAL: [
         'Recuerda que la información proporcionada es orientativa y no se garantiza la exactitud de los datos'
     ],
     CONTINUE: [
-        'Necesitas algo más?',
-        '¿Puedo ayudarte en algo más'
+        '¿En que te puedo ayudar?'
     ],
     EXIT: [
         '¡Adiós!, ¡Pasa un buen día!',
