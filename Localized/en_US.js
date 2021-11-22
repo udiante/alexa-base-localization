@@ -14,14 +14,12 @@ const strings = {
         'Say "Help" if you need more information',
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
-        'Do you need more info?',
         'Can I help you in any way?'
     ],
     LEGAL: [
         'Remember that the information provided is approximate and data accuracy is not guaranteed'
     ],
     CONTINUE: [
-        'Do you need more info?',
         'Can I help you in any way?'
     ],
     EXIT: [
@@ -36,6 +34,12 @@ const strings = {
     ERROR_MESSAGE: [
         'Error processing the response. I have not been able to understand your question.',
         'An uncontrolled error has occurred.'
+    ],
+    REPEAT_ERROR: [
+        "Sorry I can't repeat it, try another action"
+    ],
+    FALLBACK: [
+        "It seems I didn't understand what you said, try saying Help."
     ],
     GENERIC_ERROR: [
         'Sorry, <break time="400ms"/> an error has occurred and I could not get the information.'

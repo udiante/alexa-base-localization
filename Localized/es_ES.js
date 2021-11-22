@@ -17,15 +17,13 @@ const strings = {
         'Di "Ayuda" si necesitas más información'
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
-        '¿Necesitas más información?',
-        '¿Puedo ayudarte en algo más?'
+        '¿En que te puedo ayudar?'
     ],
     LEGAL: [
         'Recuerda que la información proporcionada es orientativa y no se garantiza la exactitud de los datos'
     ],
     CONTINUE: [
-        'Necesitas algo más?',
-        '¿Puedo ayudarte en algo más'
+        '¿En que te puedo ayudar?'
     ],
     EXIT: [
         '¡Adiós!, ¡Pasa un buen día!',
@@ -37,6 +35,12 @@ const strings = {
         'No estoy muy segura de lo que has dicho.',
         'Creo que no te he entendido',
         'Lo siento, prueba otra vez. Si el error persiste prueba a formular el comando de otra forma aún sigo aprendiendo.'
+    ],
+    REPEAT_ERROR: [
+        'Lo siento no puedo repetirlo, prueba con otra acción'
+    ],
+    FALLBACK: [
+        'Parece que no he entendido lo que has dicho, prueba a decir Ayuda.'
     ],
     ERROR_MESSAGE: [
         'Error al procesar la respuesta. No he podido entender tu pregunta.',

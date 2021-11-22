@@ -46,8 +46,8 @@ TestUtils.performAsyncTest("TestLocalizationManagerAddCustomLanguage", function 
 
     LocalizationManager.addCustomStrings({ BASE: { WELCOME: ["example"] } })
     var objectOverrided = LocalizationManager.getLocalizedStrings("WELCOME", "ES")
-    assert(objectOverrided.length == 1, "Even if the requested language custom strings doesn't contains the key the Base language must have it")
+    assert(objectOverrided == "example", "Even if the requested language custom strings doesn't contains the key the Base language must have it")
 
-    assert(LocalizationManager.getLocalizedStrings("WAIT_FOR_MORE_INSTRUCTIONS", "ES").length > 1, "Even if the requested language doesn't contains the key the Base strings must have it")
+    assert(LocalizationManager.getLocalizedStrings("WAIT_FOR_MORE_INSTRUCTIONS", "ES").length >= 1, "Even if the requested language doesn't contains the key the Base strings must have it")
 
 }, false)
