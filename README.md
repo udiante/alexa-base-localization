@@ -1,6 +1,14 @@
 # Alexa Base Localization NPM
 Private NPM for a centralized Alexa Skill Localization strings management.
 
+# Changelog
+
+## 1.4.0
+
+Rename de las keys en los idiomas de traducciones, ahora se cargan sin especificar país únicamente se inidica el idioma, por lo cual se simplifica el proceso de añadir traducciones.
+
+Las keys deben tener el siguiente formato: "en|es|pt|it|fr|de"
+
 # Instructions
 Import the Package.
 
@@ -13,7 +21,7 @@ const LocalizationManager = require('alexa-base-localization').LocalizationManag
 // Prepare an object with the custom Skill strings for each language
 const CUSTOM_STRINGS = {
     BASE : require('./staticFiles/BaseStrings').STRINGS,
-    EN : {
+    en : { // <- we must provide the "en" for english 
         "SKILL_NAME" : [
             "MY TEST SKILL"
         ],
@@ -22,7 +30,7 @@ const CUSTOM_STRINGS = {
             "Welcome"
         ]
     },
-    es_ES : {
+    es : {
         "SKILL_NAME" : [
             "MI SKILL DE PRUEBAS"
         ],
@@ -38,7 +46,7 @@ const CUSTOM_STRINGS = {
 LocalizationManager.addCustomStrings(CUSTOM_STRINGS)
 
 // Configure the default language
-LocalizationManager.setActiveLanguage("es_ES")
+LocalizationManager.setActiveLanguage("es")
 ```
 
 - Usage example 'LocalizationManager':
@@ -48,7 +56,7 @@ LocalizationManager.setActiveLanguage("es_ES")
 LocalizationManager.getLocalizedStrings("SKILL_NAME")
 
 // Get the values with a specific language
-LocalizationManager.getLocalizedStrings("SKILL_NAME", "es_ES") //returns: ["MI SKILL DE PRUEBAS"]
+LocalizationManager.getLocalizedStrings("SKILL_NAME", "es-ES") //returns: ["MI SKILL DE PRUEBAS"]
 LocalizationManager.getLocalizedStrings("SKILL_NAME", "EN") //returns: ["MY TEST SKILL"]
 ```
 
@@ -86,12 +94,23 @@ The `locale` property is part of the request object:
 }
 ```
 
+## Enabled Locales
+| Locale Code | Language (includes all the language variations)
+|---|--- |
+| de-DE | German (DE)
+| en-US | English (US)
+| es-ES | Spanish (ES)
+| fr-FR | French (FR)
+| it-IT | Italian (IT)
+| ja-JP | Japanese (JP)
+| pt-BR | Portuguese (BR)
+
 ## Alexa Locale codes
 | Locale Code | Language
 |---|--- |
-|de-DE | German (DE)
-|en-AU |English (AU)
-|en-CA | English (CA)
+| de-DE | German (DE)
+| en-AU |English (AU)
+| en-CA | English (CA)
 | en-GB | English (UK)
 | en-IN | English (IN)
 | en-US | English (US)

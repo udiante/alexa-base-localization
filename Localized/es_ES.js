@@ -36,6 +36,12 @@ const strings = {
         'Creo que no te he entendido',
         'Lo siento, prueba otra vez. Si el error persiste prueba a formular el comando de otra forma aún sigo aprendiendo.'
     ],
+    REPEAT_ERROR: [
+        'Lo siento no puedo repetirlo, prueba con otra acción'
+    ],
+    FALLBACK: [
+        'Parece que no he entendido lo que has dicho, prueba a decir Ayuda.'
+    ],
     ERROR_MESSAGE: [
         'Error al procesar la respuesta. No he podido entender tu pregunta.',
         'Se ha producido un error no controlado, prueba más tarde'

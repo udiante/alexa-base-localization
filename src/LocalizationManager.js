@@ -8,22 +8,22 @@
 // Base Strings 
 var DEFAULT_STRING = {
     BASE: {},
-    es_ES: {},
-    en_US: {}
+    es: {},
+    en: {}
 }
 
 // Custom Strings
 
 var CUSTOM_STRINGS = {
     BASE: {},
-    es_ES: {},
-    en_US: {}
+    es: {},
+    en: {}
 }
 
 var availableLanguages = {
     BASE: "BASE",
-    es_ES: "es_ES",
-    en_US: "en_US"
+    es: "es",
+    en: "en"
 }
 
 var activeLanguage = availableLanguages.BASE
@@ -93,14 +93,7 @@ function getLocaleFromAlexaLocale(alexaSDKLocale) {
     }
     try {
         const baseLocale = alexaSDKLocale.split('-')[0]
-        switch (baseLocale) {
-            case 'es':
-                return availableLanguages.es_ES
-            case 'en':
-                return availableLanguages.en_US
-            default:
-                return availableLanguages.BASE
-        }
+        return baseLocale
     } catch (error) {
         return activeLanguage
     }

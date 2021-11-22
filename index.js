@@ -2,8 +2,8 @@
 
 const DEFAULT_PACKAGE_LOCALIZED_STRINGS = {
     BASE: require('./Localized/Base').STRINGS,
-    es_ES: require('./Localized/es_ES').STRINGS,
-    en_US: require('./Localized/en_US').STRINGS
+    es: require('./Localized/es_ES').STRINGS,
+    en: require('./Localized/en_US').STRINGS
 }
 
 // Source code
