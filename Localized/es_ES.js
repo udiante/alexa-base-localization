@@ -1,7 +1,7 @@
 // Write all the Strings
 const strings = {
     SKILL_NAME: [
-        '{SKILL_NAME}'
+        'DEFAULT SKILL NAME ES'
     ],
     WELCOME: [
         'Hola, ¡Bienvenido a {SKILL_NAME}. Espero tu pregunta.',
@@ -14,7 +14,7 @@ const strings = {
     ],
     WELCOME_REPROMPT: [
         'Para obtener más información di Ayuda.',
-        'Di "Ayuda" si necesitas más información'
+        'Di "Ayuda" si necesitas más información.'
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
         '¿En que te puedo ayudar?'
@@ -26,15 +26,15 @@ const strings = {
         '¿En que te puedo ayudar?'
     ],
     EXIT: [
-        '¡Adiós!, ¡Pasa un buen día!',
-        '¡Nos vemos!, espero haber sido de ayuda',
-        '¡Adiós!, estoy aquí para lo que necesites',
-        '¡Nos vemos!, ¡No dudes en preguntarme cualquier otra cosa!'
+        '¡Adiós!, ¡Pasa un buen día! <break time="500ms"/> ¡Si te gusta esta Skill, no dudes en valorarla en la tienda de Skills, su desarrollador te lo agradecerá. ¡Muchas gracias!',
+        '¡Nos vemos!, espero que hayas disfrutado esta partida <break time="600ms"/> ¡Si lo has hecho, No dudes en valorarme en la tienda de Skills. ¡Muchísimas gracias!',
+        '¡Adiós!, gran partida <break time="600ms"/> ¡Si te gusta esta Skill, no dudes en valorarla en la tienda de Skills. ¡Muchísimas gracias!',
+        '¡Nos vemos!, hasta la próxima partida <break time="500ms"/> ¡Si te gusta esta Skill, no dudes en valorarme en la tienda de Skills. ¡Muchísimas gracias!'
     ],
     UNHANDLED: [
         'No estoy muy segura de lo que has dicho.',
         'Creo que no te he entendido',
-        'Lo siento, prueba otra vez. Si el error persiste prueba a formular el comando de otra forma aún sigo aprendiendo.'
+        'Lo siento, prueba otra vez. Si el error persiste prueba a formular el comando de otra forma, aún sigo aprendiendo.'
     ],
     REPEAT_ERROR: [
         'Lo siento no puedo repetirlo, prueba con otra acción'
@@ -64,6 +64,12 @@ const strings = {
     APL_ERROR: [
         'Se ha producido un error'
     ],
+    APL_BACKGROUND_IMAGE_URL: [
+        'https://'
+    ],
+    APL_SKILL_ICON_URL: [
+        'https://'
+    ]
 }
 
 /** 

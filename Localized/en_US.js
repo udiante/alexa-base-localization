@@ -1,7 +1,7 @@
 // Write all the Strings
 const strings = {
     SKILL_NAME: [
-        '{SKILL_NAME}'
+        'DEFAULT SKILL NAME'
     ],
     WELCOME: [
         'Hello, Welcome to {SKILL_NAME}.'
@@ -59,6 +59,12 @@ const strings = {
     APL_ERROR: [
         'An error happened'
     ],
+    APL_BACKGROUND_IMAGE_URL: [
+        'https://'
+    ],
+    APL_SKILL_ICON_URL: [
+        'https://'
+    ]
 }
 
 /** 
