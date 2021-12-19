@@ -10,7 +10,7 @@ const strings = {
         'LA AYUDA DEBE SER ESPECIFICA PARA CADA SKILL Y NO DEBE OBTENERSE DEL BASE'
     ],
     WELCOME_REPROMPT: [
-        'For more information tell "Help"',
+        'For more information say "Help"',
         'Say "Help" if you need more information',
     ],
     WAIT_FOR_MORE_INSTRUCTIONS: [
@@ -51,7 +51,7 @@ const strings = {
         'help'
     ],
     APL_HELP: [
-        "I'm waitting for your command"
+        "I'm waitting your command"
     ],
     APL_HINTS: [ // Listado de intents sugeridos en las vistas (Ask Alexa, XXXXXX)
         'help'

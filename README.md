@@ -1,9 +1,18 @@
 # Alexa Base Localization NPM
 Private NPM for a centralized Alexa Skill Localization strings management.
 
+Features: 
+
+- Default intent responses
+- Automatic i18n (alexa intent style) 
+
 # Changelog
 
-## 1.4.0
+## 1.5.0
+
+- Added default response copys for IT, PT, DE, JA
+
+## 1.4.0
 
 Rename de las keys en los idiomas de traducciones, ahora se cargan sin especificar país únicamente se inidica el idioma, por lo cual se simplifica el proceso de añadir traducciones.
 
