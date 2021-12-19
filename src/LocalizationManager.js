@@ -9,7 +9,12 @@
 var DEFAULT_STRING = {
     BASE: {},
     es: {},
-    en: {}
+    en: {},
+    fr: {},
+    it: {},
+    pt: {},
+    de: {},
+    ja: {}
 }
 
 // Custom Strings
@@ -17,13 +22,23 @@ var DEFAULT_STRING = {
 var CUSTOM_STRINGS = {
     BASE: {},
     es: {},
-    en: {}
+    en: {},
+    fr: {},
+    it: {},
+    pt: {},
+    de: {},
+    ja: {}
 }
 
 var availableLanguages = {
     BASE: "BASE",
     es: "es",
-    en: "en"
+    en: "en",
+    fr: 'fr',
+    it: 'it',
+    pt: 'pt',
+    de: 'de',
+    ja: 'ja'
 }
 
 var activeLanguage = availableLanguages.BASE
@@ -31,7 +46,7 @@ var activeLanguage = availableLanguages.BASE
 
 // Init
 
-function LocalizationManager(){
+function LocalizationManager() {
 
 }
 
@@ -39,7 +54,7 @@ function LocalizationManager(){
  * Sets the default strings (optional, by default the LocationManager loads the base strings from this Package)
  * @param {DEFAULT_STRING} baseStrings Object with the keys language keys. Each key has to contain 
  */
-LocalizationManager.addDefaultStrings = function(baseStrings) {
+LocalizationManager.addDefaultStrings = function (baseStrings) {
     DEFAULT_STRING = baseStrings
 }
 
@@ -47,7 +62,7 @@ LocalizationManager.addDefaultStrings = function(baseStrings) {
  * Sets the custom strings (when requesting a key the Manager will try to obtain the values from the custom strings prior to the base strings)
  * @param {CUSTOM_STRINGS} customStrings Object with using the keys of the language to use and the values for each translation
  */
-LocalizationManager.addCustomStrings = function(customStrings) {
+LocalizationManager.addCustomStrings = function (customStrings) {
     CUSTOM_STRINGS = customStrings
 }
 
@@ -55,11 +70,11 @@ LocalizationManager.addCustomStrings = function(customStrings) {
  * Sets the default language code
  * @param {String} languageKey Object with using the keys of the language to use and the values for each translation
  */
-LocalizationManager.setActiveLanguage = function(languageKey) {
+LocalizationManager.setActiveLanguage = function (languageKey) {
     activeLanguage = getValidLanguageKey(languageKey)
 }
 
-LocalizationManager.getActiveLanguage = function() {
+LocalizationManager.getActiveLanguage = function () {
     return activeLanguage
 }
 
@@ -69,7 +84,7 @@ LocalizationManager.getActiveLanguage = function() {
  * @param {String} key Localized key
  * @returns {Strings} Array of strings if the key exists in the active o base language
  */
-LocalizationManager.getLocalizedStrings = function(stringKey, languageKey) {
+LocalizationManager.getLocalizedStrings = function (stringKey, languageKey) {
     languageKey = getValidLanguageKey(languageKey) || activeLanguage
     return values = getValuesIfAvailable(languageKey, stringKey)
 }
@@ -77,8 +92,8 @@ LocalizationManager.getLocalizedStrings = function(stringKey, languageKey) {
 /**
  * Supported language keys, the imported language 
  */
-LocalizationManager.availableLanguages = function(){
-    return availableLanguages 
+LocalizationManager.availableLanguages = function () {
+    return availableLanguages
 }
 
 

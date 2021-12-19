@@ -7,6 +7,8 @@ module.exports.performAsyncTest = async function(testName, testFunction, skip) {
         await testFunction();
     } catch (error) {
         console.error('Test failed: ' + testName, error)
+        console.log('Failed Test: ' + testName);
+        return
     }
     console.log('Performed Test: ' + testName);
 }

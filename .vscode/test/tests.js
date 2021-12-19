@@ -8,6 +8,49 @@ const index = require('../../index')
 
 // Mock data
 
+TestUtils.performAsyncTest("TestBaseAlexaCopys", function () {
+    const LocalizationManager = index.LocalizationManager
+
+    var failKey = LocalizationManager.getLocalizedStrings("empty")
+    assert(failKey == undefined)
+
+    var welcomeData = LocalizationManager.getLocalizedStrings("WELCOME")
+    assert(welcomeData != undefined)
+
+    // CHECK BASE FALLBACK
+    var aplImage = LocalizationManager.getLocalizedStrings("APL_BACKGROUND_IMAGE_URL")
+    assert(aplImage == "https://")
+
+    var aplImageJA = LocalizationManager.getLocalizedStrings("APL_BACKGROUND_IMAGE_URL", "FR")
+    assert(aplImageJA == "https://")
+
+    // CHECK CUSTOM BASE FALLBACK
+
+    const customCopys = {
+        BASE: {
+            APL_BACKGROUND_IMAGE_URL: "BASE_URL_IMAGE"
+        },
+        en: {
+            SKILL_NAME: "SKILL_NAME"
+        },
+        es: {
+            APL_BACKGROUND_IMAGE_URL: "ES_URL_IMAGE"
+        }
+    }
+
+    LocalizationManager.addCustomStrings(customCopys)
+
+    var aplCustomES = LocalizationManager.getLocalizedStrings("APL_BACKGROUND_IMAGE_URL", "es")
+    assert(aplCustomES == "ES_URL_IMAGE")
+
+    var aplCustomEN = LocalizationManager.getLocalizedStrings("APL_BACKGROUND_IMAGE_URL", "en")
+    assert(aplCustomEN == "BASE_URL_IMAGE")
+
+    var aplCustomJA = LocalizationManager.getLocalizedStrings("APL_BACKGROUND_IMAGE_URL", "ja")
+    assert(aplCustomJA == "BASE_URL_IMAGE")
+
+}, false)
+
 TestUtils.performAsyncTest("TestLocalizationManager", function () {
     const LocalizationManager = index.LocalizationManager
 
