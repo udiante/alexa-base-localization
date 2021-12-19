@@ -1,5 +1,11 @@
 // Write all the Strings
 const strings = {
+    APL_BACKGROUND_IMAGE_URL: [
+        'https://'
+    ],
+    APL_SKILL_ICON_URL: [
+        'https://'
+    ],
     SKILL_NAME: [
         'DEFAULT SKILL NAME'
     ],
@@ -58,12 +64,6 @@ const strings = {
     ],
     APL_ERROR: [
         'An error happened'
-    ],
-    APL_BACKGROUND_IMAGE_URL: [
-        'https://'
-    ],
-    APL_SKILL_ICON_URL: [
-        'https://'
     ]
 }
 

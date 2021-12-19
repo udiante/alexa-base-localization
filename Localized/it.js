@@ -59,12 +59,6 @@ const strings = {
     ],
     APL_ERROR: [
         'Si è verificato un errore'
-    ],
-    APL_BACKGROUND_IMAGE_URL: [
-        'https://'
-    ],
-    APL_SKILL_ICON_URL: [
-        'https://'
     ]
 }
 
