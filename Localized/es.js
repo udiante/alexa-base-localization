@@ -27,9 +27,9 @@ const strings = {
     ],
     EXIT: [
         '¡Adiós!, ¡Pasa un buen día! <break time="500ms"/> ¡Si te gusta esta Skill, no dudes en valorarla en la tienda de Skills, su desarrollador te lo agradecerá. ¡Muchas gracias!',
-        '¡Nos vemos!, espero que hayas disfrutado esta partida <break time="600ms"/> ¡Si lo has hecho, No dudes en valorarme en la tienda de Skills. ¡Muchísimas gracias!',
-        '¡Adiós!, gran partida <break time="600ms"/> ¡Si te gusta esta Skill, no dudes en valorarla en la tienda de Skills. ¡Muchísimas gracias!',
-        '¡Nos vemos!, hasta la próxima partida <break time="500ms"/> ¡Si te gusta esta Skill, no dudes en valorarme en la tienda de Skills. ¡Muchísimas gracias!'
+        '¡Nos vemos!, espero haberte sido de utilidad <break time="600ms"/> ¡Si lo has hecho, No dudes en valorarme en la tienda de Skills. ¡Muchísimas gracias!',
+        '¡Adiós!, <break time="600ms"/> ¡Si te gusta esta Skill, no dudes en valorarla en la tienda de Skills. ¡Muchísimas gracias!',
+        '¡Nos vemos!, ¡Hasta la próxima! <break time="500ms"/> ¡Si te gusta esta Skill, no dudes en valorarme en la tienda de Skills. ¡Muchísimas gracias!'
     ],
     UNHANDLED: [
         'No estoy muy segura de lo que has dicho.',
