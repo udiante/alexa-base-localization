@@ -25,7 +25,6 @@ const strings = {
     EXIT: [
         'Arrivederci',
         'Addio buona giornata!',
-        'Arrivederci',
         'Ci vediamo! Spero di essere stato utile'
     ],
     UNHANDLED: [
