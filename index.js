@@ -8,7 +8,7 @@ const DEFAULT_PACKAGE_LOCALIZED_STRINGS = {
     it: require('./Localized/it').STRINGS,
     pt: require('./Localized/pt').STRINGS,
     de: require('./Localized/de').STRINGS,
-    jp: require('./Localized/jp').STRINGS,
+    ja: require('./Localized/ja').STRINGS,
 }
 
 // Source code

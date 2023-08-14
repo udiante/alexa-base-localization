@@ -9,7 +9,7 @@ Features:
 # Changelog
 
 ## 1.5.2
-- Fixe JA to JP copies
+- Fixe JA copies
 
 ## 1.5.0
 
