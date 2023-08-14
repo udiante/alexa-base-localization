@@ -8,6 +8,9 @@ Features:
 
 # Changelog
 
+## 1.5.2
+- Fixe JA to JP copies
+
 ## 1.5.0
 
 - Added default response copys for IT, PT, DE, JA
